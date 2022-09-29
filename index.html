@@ -3,9 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <script src="main.js" defer></script>
   <title>Music Search</title>
 </head>
 <body>
+  <h1>Really Awesome Music Site</h1>
+  
+  <div class="bandSearch">
+    <form name= "myForm" action="" method="get" id="form" >
+      <label for="search"></label>
+      <input name = "myBandBar" type="text" id="bandBar" placeholder="Artist or Band Name">
+      <button type="submit" id="submitButton">Search</button>
+    </form>
+  </div>
+  <div id="displayResults"></div>
 </body>
 </html>
