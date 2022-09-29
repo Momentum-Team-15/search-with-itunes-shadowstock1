@@ -39,13 +39,13 @@ function displayArray(dataArray) {
     for (let data of dataArray) {
         let cardDiv = document.createElement("div");
         let albumArt = document.createElement("img");
-        let artistName = document.createElement("h1");
-        let trackTitle = document.createElement("h2");
+        let artistName = document.createElement("h2");
+        let trackTitle = document.createElement("p");
         let playButton = document.createElement("audio");
 
         albumArt.src = `${data.artworkUrl100}`;
-        artistName.src = `${data.artistName}`;
-        trackTitle.innertext = `${data.trackName}`;
+        artistName.innerText = `${data.artistName}`;
+        trackTitle.innerText = `${data.trackName}`;
         playButton.src = `${data.previewUrl}`;
         playButton.controls = true;
 
@@ -54,6 +54,8 @@ function displayArray(dataArray) {
         cardDiv.appendChild(trackTitle);
         cardDiv.appendChild(playButton);
         displayResults.appendChild(cardDiv);
+
+        cardDiv.classList.add("divStyle")
     }
     }
 

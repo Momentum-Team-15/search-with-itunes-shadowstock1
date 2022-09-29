@@ -1,0 +1,21 @@
+.bandSearch{
+    display:flex;
+    justify-content: center;
+}
+
+h1{
+    text-align: center;}
+
+#displayResults{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center}
+
+.divStyle{
+    padding: 5px;
+    margin: 20px;
+    width: 300px;
+    border: solid 2px grey;
+    text-align: center;
+    justify-content: center;
+}
